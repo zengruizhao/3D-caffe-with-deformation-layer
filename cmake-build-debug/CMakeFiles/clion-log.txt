@@ -1,0 +1,127 @@
+/opt/clion-2018.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zzr/git/3D_net/3Dunet_abdomen_cascade/caffe_unet_3D_v1.0_patch/caffe_branch/caffe
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   filesystem
+--   chrono
+--   date_time
+--   atomic
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/local/include  
+-- Found glog    (include: /usr/local/include, library: /usr/local/lib/libglog.so)
+-- Found Protobuf: /usr/local/lib/libprotobuf.so;-lpthread (found version "2.6.1") 
+-- Found PROTOBUF Compiler: /usr/local/bin/protoc
+-- HDF5: Using hdf5 compiler wrapper to determine C configuration
+-- HDF5: Using hdf5 compiler wrapper to determine CXX configuration
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/libhdf5_cpp.so;/usr/lib/x86_64-linux-gnu/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.8.11") found components:  HL 
+-- Found LMDB: /usr/include  
+-- Found lmdb    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/liblmdb.so)
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found Snappy: /usr/include  
+-- Found Snappy  (include: /usr/include, library: /usr/lib/libsnappy.so)
+CMake Warning at cmake/Dependencies.cmake:63 (message):
+  -- CUDA is not detected by cmake.  Building without it...
+Call Stack (most recent call first):
+  CMakeLists.txt:43 (include)
+
+
+-- OpenCV found (/usr/local/share/OpenCV)
+-- Found Atlas: /usr/include  
+-- Found Atlas (include: /usr/include, library: /usr/lib/libatlas.so)
+-- Found PythonInterp: /usr/bin/python2.7 (found suitable version "2.7.6", minimum required is "2.7") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.6", minimum required is "2.7") 
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python2.7/dist-packages/numpy/__init__.py", line 153, in <module>
+    from . import add_newdocs
+  File "/usr/lib/python2.7/dist-packages/numpy/add_newdocs.py", line 13, in <module>
+    from numpy.lib import add_newdoc
+  File "/usr/lib/python2.7/dist-packages/numpy/lib/__init__.py", line 18, in <module>
+    from .polynomial import *
+  File "/usr/lib/python2.7/dist-packages/numpy/lib/polynomial.py", line 19, in <module>
+    from numpy.linalg import eigvals, lstsq, inv
+  File "/usr/lib/python2.7/dist-packages/numpy/linalg/__init__.py", line 50, in <module>
+    from .linalg import *
+  File "/usr/lib/python2.7/dist-packages/numpy/linalg/linalg.py", line 29, in <module>
+    from numpy.linalg import lapack_lite, _umath_linalg
+ImportError: /usr/lib/liblapack.so.3: undefined symbol: ATL_chemv
+-- Could NOT find NumPy (missing: NUMPY_INCLUDE_DIR NUMPY_VERSION) (Required is at least version "1.7.1")
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   python
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Python interface is disabled or not all required dependencies found. Building without it...
+-- Found Git: /usr/bin/git (found version "1.9.1") 
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   1.0.0-rc3
+--   Git               :   rc3-105-gdc26267-dirty
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Debug
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   ON
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   ON
+--   CPU_ONLY          :   OFF
+--   USE_OPENCV        :   ON
+--   USE_LEVELDB       :   ON
+--   USE_LMDB          :   ON
+--   ALLOW_LMDB_NOLOCK :   OFF
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.54)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.6.1)
+--   lmdb              :   Yes (ver. 0.9.10)
+--   LevelDB           :   Yes (ver. 1.15)
+--   Snappy            :   Yes (ver. 1.1.0)
+--   OpenCV            :   Yes (ver. 2.4.13.3)
+--   CUDA              :   No
+-- 
+-- Documentaion:
+--   Doxygen           :   No
+--   config_file       :   
+-- 
+-- Install:
+--   Install path      :   /home/zzr/git/3D_net/3Dunet_abdomen_cascade/caffe_unet_3D_v1.0_patch/caffe_branch/caffe/cmake-build-debug/install
+-- 
+-- Configuring done
+CMake Error at CMakeLists.txt:85 (add_dependencies):
+  The dependency target "pycaffe" of target "pytest" does not exist.
+
+
+-- Generating done
+-- Build files have been written to: /home/zzr/git/3D_net/3Dunet_abdomen_cascade/caffe_unet_3D_v1.0_patch/caffe_branch/caffe/cmake-build-debug
